@@ -4,7 +4,7 @@ A simple Pac-Man-like game implemented using Pygame.
 ## What's the Game:
 - Ghost Man is hungry and wants to eat all pellets.
 - Help him by using arrow keys to navigate him.
-![Capture](https://github.com/AbuzarTirmizi/BanoQabil2.0PythonCourse/raw/main/assets/156196658/23ce1e12-4484-4eda-91b6-1505482ecab4.png)
+![Capture](https://github.com/AbuzarTirmizi/BanoQabil2.0PythonCourse/assets/156196658/dce28ff6-7243-4a33-8a56-4414079ba3a2)
 
 ## Features
 - Classic maze layout
