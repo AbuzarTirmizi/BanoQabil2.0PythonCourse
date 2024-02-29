@@ -67,6 +67,10 @@ def draw_maze(maze):
                 pacman_pos["x"] = y
                 pacman_pos["y"] = x
                 pg.draw.circle(screen, YELLOW, pacman_args.center, pacman_size)
+                
+# Function to check if there are any pellets left in the maze
+def pellets_left(maze):
+    return any('.' in row for row in maze)
 
 # Game loop
 running = True
@@ -103,6 +107,10 @@ while running:
 
     # Execute the following block only if enough time has passed
     if last_frame >= 150:
+        
+        # Check if there are pellets left in the maze
+        if not pellets_left(maze):
+            running = False
 
         # Check if the next position is within the maze boundaries
         if 0 < next_y < len(maze[pacman_pos["x"]]) and \
